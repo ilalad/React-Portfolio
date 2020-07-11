@@ -1,23 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import background from "./images/background.jpg"
 import './App.css';
+import PortfolioContainer from "./components/PortfolioContainer";
+import { render } from "react-dom";
 
 function App() {
   return (
+
     <div className="App">
+      <PortfolioContainer />
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={background} className="Background" alt="background" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
